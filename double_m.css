@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+#wrap {
+    margin: 0 auto;
+    width: 1024px;
+    overflow: hidden;
+}
+#header {
+    width: 1024px;
+    </script>
+    height: 100px;
+    position: fixed;
+    background-color: black;
+}
+#logo {
+    width: 200px;
+    height: 100px;
+    float: left;
+}
+#logoimg {
+    float: left;
+    width: 200px;
+    height: 100px;
+}
+#menu {
+    float: right;
+    width: 800px;
+    height: 100px;
+    text-align: right;
+    margin-top: 10px;
+}
+ul {
+    padding-left: 0px;
+}
+li {
+    display: inline;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+.menu a:hover {
+    color: slateblue;
+}
+#SIDEMENU {
+    margin: 0;
+    padding: 0px;
+    padding-right: 150px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+/*middle*/
+#middle {
+  width: 1024px;
+  margin-top: 200px;
+}
+#m_title {
+  font-size: 30px;
+}
+#m_subtitle {
+  margin-top: 10px;
+}
+#m_sub_subtitle {
+  font-size: 20px;
+  margin-top: 80px;
+  clear: both;
+}
+#bin {
+  height: 700px;
+}
+#content {
+    clear: both;
+    margin: 0 auto;
+    width: 994px;
+    height: 300px;
+    font-size: 18px;
+    padding-bottom: 100px;
+}
+#content_1 {
+  clear: both;
+  margin-bottom: 30px;
+}
+.img {
+    float: left;
+    padding-top: 15px;
+    padding-left: 30px;
+    font-size: 12px;
+}
+.img2 {
+    float: left;
+    padding-top: 15px;
+    padding-left: 30px;
+    font-size: 12px;
+    opacity: 1;
+    transition: 2s ease;
+    text-decoration: underline;
+}
+.img2:hover {
+    opacity: 0.5;
+}
+
+/*middle*/
+
+#footer {
+    width: 100%;
+    padding-top: 180px;
+    padding-bottom: 60px;
+    clear: both;
+}
+#copy {
+    float: left;
+    font-size: 12px;
+}
+#sns {
+    float: right;
+    font-size: 18px;
+}
+#sns a:hover {
+    color: slateblue;
+}

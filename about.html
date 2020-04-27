@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang=ko>
+<head>
+    <meta charset="utf-8">
+    <title>y0ung Fini</title>
+    <link href=about.css rel=stylesheet type=text/css>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+
+    <script>
+            if ('addEventListener' in window) {
+              window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
+              document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+            }
+        </script>
+
+        <!--따라오는 스크롤-->
+            <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+            <script type="text/javascript">
+                $(function(){
+                $('.mov').click(function(){  // mov 클래스가 설정된 부분을 클릭하면 href에 적은 값만큼 세로로 스크롤 시킨다.
+                var ss = $(this).attr("href");
+                $('html, body').animate({scrollTop:ss});
+                return false;
+                });
+                });
+            </script>
+            <script type="text/javascript">
+                var stmnLEFT = 10; // 오른쪽 여백
+                var stmnGAP1 = 0; // 위쪽 여백
+                var stmnGAP2 = 400; // 스크롤시 브라우저 위쪽과 떨어지는 거리
+                var stmnBASE = 400; // 스크롤 시작위치
+                var stmnActivateSpeed = 20; //스크롤을 인식하는 딜레이 (숫자가 클수록 느리게 인식)
+                var stmnScrollSpeed = 10; //스크롤 속도 (클수록 느림)
+                var stmnTimer;
+
+                function RefreshStaticMenu() {
+                 var stmnStartPoint, stmnEndPoint;
+                 stmnStartPoint = parseInt(document.getElementById('SIDEMENU').style.top, 10);
+                 stmnEndPoint = Math.max(document.documentElement.scrollTop, document.body.scrollTop) + stmnGAP2;
+                 if (stmnEndPoint < stmnGAP1) stmnEndPoint = stmnGAP1;
+                 if (stmnStartPoint != stmnEndPoint) {
+                  stmnScrollAmount = Math.ceil( Math.abs( stmnEndPoint - stmnStartPoint ) / 15 );
+                  document.getElementById('SIDEMENU').style.top = parseInt(document.getElementById('SIDEMENU').style.top, 10) + ( ( stmnEndPoint<stmnStartPoint ) ? -stmnScrollAmount : stmnScrollAmount ) + 'px';
+                  stmnRefreshTimer = stmnScrollSpeed;
+                  }
+                 stmnTimer = setTimeout("RefreshStaticMenu();", stmnActivateSpeed);
+                 }
+                function InitializeStaticMenu() {
+                 document.getElementById('SIDEMENU').style.right = stmnLEFT + 'px';  //처음에 오른쪽에 위치.
+                 document.getElementById('SIDEMENU').style.top = document.body.scrollTop + stmnBASE + 'px';
+                 RefreshStaticMenu();
+                 }
+              </script>
+</head>
+<body onload="InitializeStaticMenu();">
+  <div id=SIDEMENU>
+          <a href=#img><img src=img/arrow.png width=50></a>
+    </div>
+
+    <div id=wrap>
+      <div id=header>
+        <div id=logo>
+          <a href=index.html><img id=logoimg src=img/logo_menu.png></a>
+        </div>
+
+        <div id=menu>
+          <div class=menu>
+            <ul>
+              <li><a href=about.html> About</a></li>
+              <li><a href=main_m.html> Digital media content</a></li>
+              <li><a href=double_m.html> Digital Humanities Art</a></li>
+              <li><a href=photo.html> Photo </a></li>
+              <li><a href=contact.html> Contact</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+<!--middle-->
+<div id=middle>
+
+  <div id=img>
+    <img src=img/1.jpg width="80%"><br>
+  </div>
+    <!--<h3>Hi! I'm JIN :)</h3>-->
+    <hr>
+
+    <div id=name>
+    <ul>
+    <li>Choi Yu-jin</li> <br>
+    <li>최유진</li>
+  </ul>
+  </div>
+
+    <div id=content_1>
+    <ul>
+    <li>2000년 03월 출생</li>
+    <p>
+    <li>2019년 02월 한림대학교 입학</li> <br>
+    <li>2020년 03월 주전공 디지털미디어콘텐츠 / 복수전공 디지털인문예술</li>
+  </ul>
+  </div>
+
+  <div id=name>
+  <ul>
+  <li>Skill</li> <br>
+  </ul>
+  </div>
+  <div id=content_2>
+  <ul>
+  <li><img src=img/ps.png width="100"></li>
+  <li><img src=img/ai.png width="100"></li>
+  <li><img src=img/pr.png width="100"></li>
+  <li><img src=img/ae.png width="100"></li>
+  </ul>
+  </div>
+  <div id=content_2>
+  <ul>
+  <li><img src=img/power.png width="100"></li>
+  <li><img src=img/ex.png width="100"></li>
+  <li><img src=img/w.png width="100"></li>
+  </ul>
+  </div>
+  <div id=content_2>
+  <ul>
+  <li><img src=img/html.png width="100"></li>
+  <li><img src=img/css.png width="100"></li>
+  </ul>
+  </div>
+
+
+  </div>
+
+
+<!--middle-->
+      <div id=footer>
+        <div id=copy>
+          ⓒy0ung Fini 2020
+        </div>
+
+        <div id=sns>
+          <a href=http://instagram.com/u.jin_2222 target=_blank><i class="fab fa-instagram"></i></a>
+          <a href=https://www.youtube.com/channel/UCAZWzrpSYBCGwWaqDzxe8ig?view_as=subscriber target=_blank><i class="fab fa-youtube"></i></a>
+          <a href=https://www.facebook.com/kjnd20 target=_blank><i class="fab fa-facebook-square"></i></a>
+        </div>
+      </div>
+
+    </div>
+</div>
+</body>
+</html>

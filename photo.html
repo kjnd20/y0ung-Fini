@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang=ko>
+<head>
+    <meta charset="utf-8">
+    <title>y0ung Fini</title>
+    <link href=photo.css rel=stylesheet type=text/css>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+
+    <script>
+            if ('addEventListener' in window) {
+              window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
+              document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+            }
+    </script>
+
+<!--따라오는 스크롤-->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+        $('.mov').click(function(){  // mov 클래스가 설정된 부분을 클릭하면 href에 적은 값만큼 세로로 스크롤 시킨다.
+        var ss = $(this).attr("href");
+        $('html, body').animate({scrollTop:ss});
+        return false;
+        });
+        });
+    </script>
+    <script type="text/javascript">
+        var stmnLEFT = 10; // 오른쪽 여백
+        var stmnGAP1 = 0; // 위쪽 여백
+        var stmnGAP2 = 400; // 스크롤시 브라우저 위쪽과 떨어지는 거리
+        var stmnBASE = 400; // 스크롤 시작위치
+        var stmnActivateSpeed = 20; //스크롤을 인식하는 딜레이 (숫자가 클수록 느리게 인식)
+        var stmnScrollSpeed = 10; //스크롤 속도 (클수록 느림)
+        var stmnTimer;
+
+        function RefreshStaticMenu() {
+         var stmnStartPoint, stmnEndPoint;
+         stmnStartPoint = parseInt(document.getElementById('SIDEMENU').style.top, 10);
+         stmnEndPoint = Math.max(document.documentElement.scrollTop, document.body.scrollTop) + stmnGAP2;
+         if (stmnEndPoint < stmnGAP1) stmnEndPoint = stmnGAP1;
+         if (stmnStartPoint != stmnEndPoint) {
+          stmnScrollAmount = Math.ceil( Math.abs( stmnEndPoint - stmnStartPoint ) / 15 );
+          document.getElementById('SIDEMENU').style.top = parseInt(document.getElementById('SIDEMENU').style.top, 10) + ( ( stmnEndPoint<stmnStartPoint ) ? -stmnScrollAmount : stmnScrollAmount ) + 'px';
+          stmnRefreshTimer = stmnScrollSpeed;
+          }
+         stmnTimer = setTimeout("RefreshStaticMenu();", stmnActivateSpeed);
+         }
+        function InitializeStaticMenu() {
+         document.getElementById('SIDEMENU').style.right = stmnLEFT + 'px';  //처음에 오른쪽에 위치.
+         document.getElementById('SIDEMENU').style.top = document.body.scrollTop + stmnBASE + 'px';
+         RefreshStaticMenu();
+         }
+      </script>
+
+</head>
+<body onload="InitializeStaticMenu();">
+  <div id=SIDEMENU>
+          <a href=#content><img src=img/arrow.png width=50></a>
+    </div>
+
+    <div id=wrap>
+      <div id=header>
+        <div id=logo>
+          <a href=index.html><img id=logoimg src=img/logo_menu.png></a>
+        </div>
+
+        <div id=menu>
+          <div class=menu>
+            <ul>
+              <li><a href=about.html> About</a></li>
+              <li><a href=main_m.html> Digital media content</a></li>
+              <li><a href=double_m.html> Digital Humanities Art</a></li>
+              <li><a href=photo.html> Photo </a></li>
+              <li><a href=contact.html> Contact</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+<!--middle-->
+<div id=middle>
+
+<div id=content>
+
+</div>
+
+  <div class=part>
+      <div class=design><img class=art src=photo/1.jpg></div>
+      <div class=design><img class=art src=photo/2.jpg></div>
+      <div class=design><img class=art src=photo/3.jpg></div>
+      <div class=design><img class=art src=photo/4.jpg></div>
+      <div class=design><img class=art src=photo/5.jpg></div>
+      <div class=design><img class=art src=photo/7.jpg></div>
+      <div class=design><img class=art src=photo/8.jpg></div>
+      <div class=design><img class=art src=photo/9.jpg></div>
+      <div class=design><img class=art src=photo/10.jpg></div>
+      <div class=design><img class=art src=photo/11.jpg></div>
+      <div class=design><img class=art src=photo/12.jpg></div>
+      <div class=design><img class=art src=photo/13.jpg></div>
+      <div class=design><img class=art src=photo/14.jpg></div>
+
+  </div>
+  <div class=part>
+    <div class=design><img class=art src=photo/15.jpg></div>
+    <div class=design><img class=art src=photo/16.jpg></div>
+    <div class=design><img class=art src=photo/17.jpg></div>
+    <div class=design><img class=art src=photo/18.jpg></div>
+    <div class=design><img class=art src=photo/19.jpg></div>
+    <div class=design><img class=art src=photo/20.jpg></div>
+    <div class=design><img class=art src=photo/21.jpg></div>
+    <div class=design><img class=art src=photo/22.jpg></div>
+    <div class=design><img class=art src=photo/23.jpg></div>
+    <div class=design><img class=art src=photo/24.jpg></div>
+    <div class=design><img class=art src=photo/25.jpg></div>
+    <div class=design><img class=art src=photo/26.jpg></div>
+    <div class=design><img class=art src=photo/27.jpg></div>
+    <div class=design><img class=art src=photo/28.jpg></div>
+  </div>
+
+  <div class=part>
+    <div class=design><img class=art src=photo/29.jpg></div>
+    <div class=design><img class=art src=photo/30.jpg></div>
+    <div class=design><img class=art src=photo/31.jpg></div>
+    <div class=design><img class=art src=photo/32.jpg></div>
+    <div class=design><img class=art src=photo/33.jpg></div>
+    <div class=design><img class=art src=photo/34.jpg></div>
+    <div class=design><img class=art src=photo/35.jpg></div>
+    <div class=design><img class=art src=photo/36.jpg></div>
+    <div class=design><img class=art src=photo/37.jpg></div>
+    <div class=design><img class=art src=photo/38.jpg></div>
+    <div class=design><img class=art src=photo/39.jpg></div>
+    <div class=design><img class=art src=photo/40.jpg></div>
+    <div class=design><img class=art src=photo/41.jpg></div>
+  </div>
+</div>
+<!--middle-->
+
+      <div id=footer>
+        <div id=copy>
+          ⓒy0ung Fini 2020
+        </div>
+
+        <div id=sns>
+          <a href=http://instagram.com/u.jin_2222 target=_blank><i class="fab fa-instagram"></i></a>
+          <a href=https://www.youtube.com/channel/UCAZWzrpSYBCGwWaqDzxe8ig?view_as=subscriber target=_blank><i class="fab fa-youtube"></i></a>
+          <a href=https://www.facebook.com/kjnd20 target=_blank><i class="fab fa-facebook-square"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,232 @@
+body {
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+#wrap {
+    margin: 0 auto;
+    width: 1024px;
+    overflow: hidden;
+}
+#header {
+    width: 1024px;
+    height: 100px;
+    position: fixed;
+    background-color: black;
+}
+#logo {
+    width: 200px;
+    height: 100px;
+    float: left;
+}
+#logoimg {
+    float: left;
+    width: 200px;
+    height: 100px;
+}
+
+#menu {
+    float: right;
+    width: 800px;
+    height: 100px;
+    text-align: right;
+    margin-top: 10px;
+}
+ul {
+    padding-left: 0px;
+}
+li {
+    display: inline;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+.menu a:hover {
+    color: slateblue;
+}
+
+/*middle*/
+#middle {
+  width: 100%;
+  margin: auto;
+  clear: both;
+}
+
+/**/
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+
+html, body { background: #000000 url("https://codepen.io/images/classy_fabric.png"); }
+
+.slides {
+    padding: 0;
+    width: 609px;
+    height: 420px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.slides input { display: none; }
+
+.slide-container { display: block; }
+
+.slide {
+    top: 0;
+    opacity: 0;
+    width: 609px;
+    height: 420px;
+    display: block;
+    position: absolute;
+
+    transform: scale(0);
+
+    transition: all .7s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav label {
+    width: 200px;
+    height: 100%;
+    display: none;
+    position: absolute;
+
+      opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+
+    transition: opacity .2s;
+
+    color: #FFF;
+    font-size: 156pt;
+    text-align: center;
+    line-height: 380px;
+    font-family: "Varela Round", sans-serif;
+    background-color: rgba(255, 255, 255, .3);
+    text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+
+.slide:hover + .nav label { opacity: 0.5; }
+
+.nav label:hover { opacity: 1; }
+
+.nav .next { right: 0; }
+
+input:checked + .slide-container  .slide {
+    opacity: 1;
+
+    transform: scale(1);
+
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .nav label { display: block; }
+
+.nav-dots {
+    width: 100%;
+    bottom: 9px;
+    height: 11px;
+    display: block;
+    position: absolute;
+    text-align: center;
+}
+
+.nav-dots .nav-dot {
+    top: -5px;
+    width: 11px;
+    height: 11px;
+    margin: 0 4px;
+    position: relative;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-dots .nav-dot:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3,
+input#img-4:checked ~ .nav-dots label#img-dot-4,
+input#img-5:checked ~ .nav-dots label#img-dot-5,
+input#img-6:checked ~ .nav-dots label#img-dot-6 {
+    background: rgba(0, 0, 0, 0.8);
+}
+/**/
+
+#slider {
+  margin-top: 100px;
+}
+
+#img {
+  text-align: center;
+  padding-top: 80px;
+}
+#part {
+  clear: both;
+  margin: 0 auto;
+  width: 994px;
+  height: 300px;
+  font-size: 20px;
+  margin-top: 50px;
+}
+.digipart {
+  float: left;
+  padding-top: 15px;
+  padding-left: 30px;
+  text-decoration: underline;
+  font-size: 12px;
+  opacity: 1;
+  transition: 1s ease
+}
+.digipar:hover {
+  opacity: 0.7;
+}
+.artpart {
+  float: left;
+  padding-top: 15px;
+  padding-left: 70px;
+  text-decoration: underline;
+  font-size: 12px;
+  opacity: 1;
+  transition: 2s ease
+}
+.artpart:hover {
+  opacity: 0.7;
+}
+/*middle*/
+
+#footer {
+    width: 100%;
+    padding-top: 180px;
+    padding-bottom: 60px;
+}
+#copy {
+    float: left;
+    font-size: 12px;
+}
+#sns {
+    float: right;
+    font-size: 18px;
+}
+#sns a:hover {
+    color: slateblue;
+}

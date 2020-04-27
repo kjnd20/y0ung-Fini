@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+#wrap {
+    margin: 0 auto;
+    width: 1024px;
+    overflow: hidden;
+}
+#header {
+    width: 1024px;
+    height: 100px;
+    position: fixed;
+    background-color: black;
+}
+#logo {
+    width: 200px;
+    height: 100px;
+    float: left;
+}
+#logoimg {
+    float: left;
+    width: 200px;
+    height: 100px;
+}
+
+#menu {
+    float: right;
+    width: 800px;
+    height: 100px;
+    text-align: right;
+    margin-top: 10px;
+}
+ul {
+    padding-left: 0px;
+}
+li {
+    display: inline;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+.menu a:hover {
+    color: slateblue;
+}
+
+/*middle*/
+#middle {
+  width: 100%;
+  margin: auto;
+  clear: both;
+}
+#content {
+  width: 750px;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding-top: 80px;
+}
+#bigname {
+  font-size: 50px;
+}
+#smallname {
+  margin-top: 50px;
+  font-size: 20px;
+  padding-left: 25px;
+}
+#contact {
+  margin-top: 30px;
+  padding-left: 25px;
+}
+#button {
+  margin-top: 50px;
+  padding-left: 25px;
+}
+
+/*middle*/
+
+#footer {
+    width: 100%;
+    padding-top: 180px;
+    padding-bottom: 60px;
+}
+#copy {
+    float: left;
+    font-size: 12px;
+}
+#sns {
+    float: right;
+    font-size: 18px;
+}
+#sns a:hover {
+    color: slateblue;
+}

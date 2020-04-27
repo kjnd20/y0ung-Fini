@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang=ko>
+<head>
+    <meta charset="utf-8">
+    <title>y0ung Fini</title>
+    <link href=main.css rel=stylesheet type=text/css>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+
+    <script>
+            if ('addEventListener' in window) {
+              window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
+              document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+            }
+        </script>
+
+</head>
+<body>
+
+    <div id=wrap>
+      <div id=header>
+        <div id=logo>
+          <a href=index.html><img id=logoimg src=img/logo_menu.png></a>
+        </div>
+
+        <div id=menu>
+          <div class=menu>
+            <ul>
+              <li><a href=about.html> About</a></li>
+              <li><a href=main_m.html> Digital media content</a></li>
+              <li><a href=double_m.html> Digital Humanities Art</a></li>
+              <li><a href=photo.html> Photo </a></li>
+              <li><a href=contact.html> Contact</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+<!--middle-->
+  <div id=middle>
+
+<!--슬라이더-->
+<div id=slider>
+
+<ul class="slides">
+    <input type="radio" name="radio-btn" id="img-1" checked />
+    <li class="slide-container">
+        <div class="slide">
+            <img src=img/2.jpg />
+        </div>
+        <div class="nav">
+            <label for="img-6" class="prev">&#x2039;</label>
+            <label for="img-2" class="next">&#x203a;</label>
+        </div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-2" />
+    <li class="slide-container">
+        <div class="slide">
+          <img src=img/7.jpg />
+        </div>
+        <div class="nav">
+            <label for="img-1" class="prev">&#x2039;</label>
+            <label for="img-3" class="next">&#x203a;</label>
+        </div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-3" />
+    <li class="slide-container">
+        <div class="slide">
+          <img src=img/3.jpg />
+        </div>
+        <div class="nav">
+            <label for="img-2" class="prev">&#x2039;</label>
+            <label for="img-4" class="next">&#x203a;</label>
+        </div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-4" />
+    <li class="slide-container">
+        <div class="slide">
+          <img src=img/4.jpg />
+        </div>
+        <div class="nav">
+            <label for="img-3" class="prev">&#x2039;</label>
+            <label for="img-5" class="next">&#x203a;</label>
+        </div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-5" />
+    <li class="slide-container">
+        <div class="slide">
+          <img src=img/5.jpg />
+        </div>
+        <div class="nav">
+            <label for="img-4" class="prev">&#x2039;</label>
+            <label for="img-6" class="next">&#x203a;</label>
+        </div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-6" />
+    <li class="slide-container">
+        <div class="slide">
+          <img src=img/6.jpg />
+        </div>
+        <div class="nav">
+            <label for="img-5" class="prev">&#x2039;</label>
+            <label for="img-1" class="next">&#x203a;</label>
+        </div>
+    </li>
+
+    <li class="nav-dots">
+      <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+      <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+      <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+      <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+      <label for="img-5" class="nav-dot" id="img-dot-5"></label>
+      <label for="img-6" class="nav-dot" id="img-dot-6"></label>
+    </li>
+</ul>
+
+</div>
+<!--
+    <div id=img> <img src=img/2.jpg width="80%"> </div>
+-->
+
+    <h3> Hi! I'm JIN :) </h3>
+    <hr>
+    <div id=part>
+      <a href=main_m.html>Digital media content > </a> <br>
+      <div class=digipart><iframe width="250" height="142" src="https://www.youtube.com/embed/lYlc6CkqIAU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br> <a href=main_m.html>커뮤니케이션개론<br>정보확산이론 </a></div>
+      <div class=digipart><iframe width="250" height="142" src="https://www.youtube.com/embed/IjQaXestu30" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br> <a href=main_m.html>디지털효과영상제작<br>Like Me </a></div>
+      <div class=digipart><a href=main_m.html><img src=img/insta_3.jpg width=250>
+        <br> 커뮤니케이션개론<br>정보확산이론 </a></div>
+    </div>
+
+    <div id=part>
+      <a href=double_m.html>Digital Humanities Art > </a><br>
+      <div class=artpart><a href=double_m.html><img src=img/cry.jpg height="200">
+        <br> 디지털매체와예술<br>기하학적 드로잉 </a></div>
+      <div class=artpart><a href=double_m.html><img src="img/150x118mm back.png" height="200">
+        <br> 디지털매체와예술<br>기하학적 드로잉 </a></div>
+      <div class=artpart><a href=double_m.html><img src=img/jpg.jpg height="200">
+        <br> 디지털매체와예술<br>기하학적 드로잉 </a></div>
+    </div>
+
+  </div>
+<!--middle-->
+      <div id=footer>
+        <div id=copy>
+          ⓒy0ung Fini 2020
+        </div>
+
+        <div id=sns>
+          <a href=http://instagram.com/u.jin_2222 target=_blank><i class="fab fa-instagram"></i></a>
+          <a href=https://www.youtube.com/channel/UCAZWzrpSYBCGwWaqDzxe8ig?view_as=subscriber target=_blank><i class="fab fa-youtube"></i></a>
+          <a href=https://www.facebook.com/kjnd20 target=_blank><i class="fab fa-facebook-square"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+</body>
+</html>
